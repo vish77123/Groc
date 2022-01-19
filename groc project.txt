@@ -1,0 +1,13 @@
+1)Mysql/MongoDB
+2)
+login page and register page
+admin page
+	add,delete,update
+Product list
+	cart,wishlist
+Search bar
+chatbox
+myorders
+font
+
+
