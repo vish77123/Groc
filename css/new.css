@@ -83,20 +83,24 @@
 .header{
   height: 700px,
   width:100%;
-  background-image: url("photos/slider1.jpg");
+  background-image: url("../photos/slider1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hometext{
-  margin-top: 40%;
-  margin-bottom: 40%;
+  margin-top: 35%;
+  margin-bottom: 35%;
   text-align: center;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
 
 }
-
+@media only screen and (max-width: 750px) {
+  .hometext {
+    font-size: 0.5rem;
+  }
+}
 .btn{
     background-color: greenyellow;
     font-size: 20px;
@@ -230,4 +234,32 @@
     border: 2px solid whitesmoke;
     border-radius: 10px;
     font-size: 1.5rem;
+}
+
+.carousel-item{
+  width: 100%;
+  height: auto;
+}
+
+#deal{
+  background-color:#F6F6F6;
+}
+
+.offerCards{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  box-shadow: 0 6px 10px rgba(0,0,0,.10), 0 0 6px rgba(0,0,0,.08);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  padding-bottom: 15%;
+}
+.card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
