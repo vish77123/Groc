@@ -240,6 +240,15 @@
   width: 100%;
   height: auto;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: #507a18;
+    background-color: rgba(21, 192, 35, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #507a18;
+}
 
 #deal{
   background-color:#F6F6F6;
