@@ -142,7 +142,7 @@
   background-color:#F6F6F6;
 }
 
-.offerCards{
+.carouselEg{
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 20%;
@@ -154,9 +154,29 @@
   box-shadow: 0 6px 10px rgba(0,0,0,.10), 0 0 6px rgba(0,0,0,.08);
   transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   cursor: pointer;
-  padding-bottom: 15%;
+  padding-bottom: 10%;
 }
-.card:hover{
+.card-img-top:hover{
   transform: scale(1.03);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.featureCards{
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: space-around;
+ }
+
+#features{
+  text-align: center;
+}
+
+.feature-heading{
+  padding-top: 2.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+
 }
