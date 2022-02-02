@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <title>MyGroc</title>
 </head>
 
@@ -61,144 +64,111 @@
     </div>
   </section>
 
-
-
-
-
-
-
   <section class="deal" id="deal">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row offerCards">
-            <div class="col-lg-4  carddiv">
-              <div class="card text-center" style="width: 18rem;">
-                <img src="photos/offer1.jpg" class="card-img-top" alt="offer1" height="">
-                <div class="card-body justify-content-center">
-                  <h5 class="card-title">Dairy Milk</h5></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4  carddiv">
-              <div class="card text-center" style="width: 18rem;">
-                <img src="photos/offer2.jpg" class="card-img-top" alt="...">
-                <div class="card-body justify-content-center" >
-                  <h5 class="card-title">Fruits</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4  carddiv">
-              <div class="card text-center" style="width: 18rem;">
-                <img src="photos/offer3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Veggies</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="carouselEg owl-carousel">
+      <div class="card text-center">
+        <img src="photos/offer1.jpg" class="card-img-top" alt="offer1" height="">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Dairy Milk</h5>
+          </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
         </div>
-        <div class="carousel-item">
-          <div class="row offerCards">
-            <div class="col-lg-4  carddiv">
-              <div class="card text-center" style="width: 18rem;">
-                <img src="photos/image.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
+      </div>
+      <div class="card text-center">
+        <img src="photos/offer2.jpg" class="card-img-top" alt="offer1" height="">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Dairy Milk</h5>
+          </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+        </div>
+      </div>
+      <div class="card text-center">
+        <img src="photos/offer3.jpg" class="card-img-top" alt="offer1" height="">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Dairy Milk</h5>
+          </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+        </div>
+      </div>
+      <div class="card text-center">
+        <img src="photos/offer1.jpg" class="card-img-top" alt="offer1" height="">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Dairy Milk</h5>
+          </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+        </div>
+      </div>
+      <div class="card text-center">
+        <img src="photos/offer1.jpg" class="card-img-top" alt="offer1" height="">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Dairy Milk</h5>
+          </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+        </div>
+      </div>
+      <div class="card text-center">
+        <img src="photos/offer1.jpg" class="card-img-top" alt="offer1" height="">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Dairy Milk</h5>
+          </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="features">
+    <div class="feature">
+      <div class="feature-heading">
+        <h2><span>Features</span></h2>
+      </div>
+      <div class="row featureCards gy-4">
+        <div class="col-lg-4 col-md-4 carddiv">
+          <div class="card text-center">
+            <img src="photos/feature1.png" class="card-img-top" alt="offer1" height="">
+            <div class="card-body justify-content-center">
+              <h5 class="card-title">Fresh and Organic</h5>
+              </h5>
+              <p class="card-text">From the farm to your kitchen.</p>
+
             </div>
-            <div class="col-lg-4  carddiv">
-              <div class="card text-center" style="width: 18rem;">
-                <img src="photos/image.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 carddiv">
+          <div class="card text-center">
+            <img src="photos/feature2.png" class="card-img-top" alt="...">
+            <div class="card-body justify-content-center">
+              <h5 class="card-title">Free Delivery</h5>
+              <p class="card-text">Get your order just right away.</p>
+
             </div>
-            <div class="col-lg-4   carddiv">
-              <div class="card text-center" style="width: 18rem;">
-                <img src="photos/image.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 carddiv">
+          <div class="card text-center">
+            <img src="photos/feature3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Easy Payments</h5>
+              <p class="card-text">Easy Payment options available.</p>
+
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </div>
     </div>
   </section>
-
-
-  <section class="Category" id="Category">
-    <h1 class="heading">Shop By Category</h1>
-    <div class="box-container">
-      <div class="box">
-        <h3>Vegetables</h3>
-        <p>Upto 50% off</p>
-        <img src="photos/veggies.jpg" alt="vegetable">
-        <button class="btn1">Shop Now</button>
-      </div>
-      <div class="box">
-        <h3>Body Care</h3>
-        <p> Upto 20% off</p>
-        <img src="photos/body care.jpg" alt="bodycare">
-        <button class="btn2">Shop Now</button>
-      </div>
-      <div class="box">
-        <h3>Fruits</h3>
-        <p> Upto 40% off</p>
-        <img src="photos/f1.jpg" alt="fruits">
-        <button class="btn3">Shop Now</button>
-      </div>
-    </div>
-  </section>
-  <div class="heading1">
-    <h3>Contact Us</h3>
-  </div>
-  <section class="contact" id="contact">
-    <div class="left-box">
-      <img src="photos/contact.jpg" alt="contact">
-    </div>
-    <form action="#">
-      <div class="inputbox">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-      </div>
-      <textarea placeholder="Message" name=" " id=" " cols="30" rows="10"></textarea>
-      <button class="btn4">Send Message</button>
-    </form>
-  </section>
-
-
-
-
 
   <script src="js/bootstrap.bundle.min.js"></script>
-
+  <script src="index.js" charset="utf-8"></script>
 
 </body>
 
