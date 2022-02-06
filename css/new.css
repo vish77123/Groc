@@ -1,92 +1,83 @@
 *{
     margin: 0;
     padding: 0;
-}
-.header-1{
-    background-color:#e9fce9;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2%;
-}
-.logo{
-    color: black;
-    font-weight: bolder;
-    font-size: 2rem;
-    text-decoration: none;
-}
-.logo i{
-    margin: 0%;
-    padding: 0%;
-    color: green;
+    font-family: Varela Round, sans-serif;
 }
 .navbar{
-    overflow: hidden;
-    background-color: #264233;
-    width: 100%;
-    height: 3rem;
+  position: absolute;
+  overflow:visible;
 }
-.navbar a{
-    float: left;
-    text-decoration: none;
-    display: block;
-    padding: 14px 16px;
-    font-size:1.3rem;
-    font-family: 'Montserrat', sans-serif;
+.user{
+  padding-top: 20px;
 }
-.navbar a:hover{
-    background-color:#507a18;
-    color: black;
-
+.badge{
+  font-size: 1rem;
 }
-.navbar a.active{
-    background-color: #507a18;
+#content{
+  background-color: lightgray;
 }
-.navbar .cart{
-    float: right;
+.form-control{
+  width: 50%; 
+  border: 2px solid white;
+  border-bottom: 2px solid black;
 }
-
-.icons{
-  color: #869486;
+#pass{
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 12rem; 
 }
-
-.homeimg{
-  width:100%;
-  max-height:713px;
-  background-size: cover;
-  justify-content: center;
-  text-align: center;
-
+#forgot{
+  text-decoration: none;
 }
-
-
-@media screen and (max-width: 600px) {
-    .right-nav {
-      float: none;
+.input-group-text{
+  border: 2px solid white;
 }
-.right-nav input[type=text], .right-nav button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 10px;
-      padding: 14px;
+#btn1{
+  width: 50%;
+  margin-left: 12rem;
+  margin-top: 30px;
 }
-.right-nav input[type=text] {
-      border: 1px solid #ccc;
+#btn1:hover{    
+  background-color: aquamarine;
+  color: black;
 }
+#btn2{
+  width: 20%;
+  margin-left: 13rem;
 }
-#navi{
-    margin: 0;
+#btn3{
+  width: 20%;
+  margin-left: 10px;
+}
+.icon1{
+  display: flex;
+  margin-left: 18rem;
+}
+.icon1 a{
+  text-decoration: none;
+  color:black;
+  background-color: rgba(0,0,0,.05);
+  border-radius: 50%;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.icon1 a:hover{
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+.nav-link:hover{
+      background-color: greenyellow;
+      border: 1px solid greenyellow;
+      border-radius: 10px;
 }
 
 .header{
-  height: 700px,
-  width:100%;
   background-image: url("../photos/slider1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .hometext{
   margin-top: 35%;
@@ -176,7 +167,7 @@
 
 .feature-heading{
   padding-top: 2.5%;
-  font-family: 'Montserrat', sans-serif;
+
   font-weight: bolder;
 
 }
