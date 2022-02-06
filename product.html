@@ -4,104 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <title>Product</title>
 </head>
 <body>
-    <style>
-      .user{
-        padding-top: 20px;
-      }
-      .badge{
-        font-size: 12px;
-      }
-      .icon1{
-        display: flex;
-        margin-left: 20rem;
-      }
-      .icon1 a{
-        text-decoration: none;
-        color:black;
-        background-color: rgba(0,0,0,.05);
-        border-radius: 50%;
-        padding-top: 15px;
-        padding-left: 10px;
-      }
-      .icon1 a:hover{
-        cursor: pointer;
-        background-color: green;
-        color: white;
-      }
-      .nav-link:hover{
-            background-color: greenyellow;
-            border: 1px solid greenyellow;
-            border-radius: 10px;
-      }
-
-      .nav-link1{
-            text-decoration: none;
-            padding-left: 20px;
-        }
-      .icon{
-          display: flex;
-          position: absolute;
-          left: 15rem;
-        }
-      .icon a{
-          display: inline-block;
-          text-decoration: none;
-          color: black;
-          margin-top: 0.5rem;
-          padding-top: 5px;
-          -webkit-transition: 0.5s ease;
-          transition: 0.5s ease;
-        }
-      .icon a:hover{
-          cursor: pointer;
-          color: lightgreen;
-          -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-      }
-      .card-img{
-        -webkit-transition: 0.5s ease;
-        transition: 0.5s ease;
-        border:  1px solid white;
-        border-radius: 10%;
-      }
-      .card-img:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-      .star-icon{
-          color: gold;
-        }
-      .btn:hover{
-          color:white;
-          background-color: green;
-        }
-
-
-  </style>
   <div class="container-fluid" style="display: flex; background: rgba(0,0,0,0.8);">
     <a class="navbar-brand" href="#">
       <img src="photos/logo.jpg" alt="Logo" style="width: 120px;" class="rounded-pill">
     </a>
     <form class="search-bar" style="display: flex;"> 
-      <input class="form-control me-2" type="text" placeholder="Search" style="width: 700px; height: 6vh; margin-top: 1.5rem; margin-left: 60px;">
-      <button class="btn btn-success" type="button" style="width: 10%; height: 6vh; margin-top: 1.5rem;">Search</button>
+      <input class="form-control me-2" type="text" placeholder="Search" style="width: 700px; height: 6vh; margin-top: 1.5rem; margin-left: 70px;">
+      <button class="btn btn-success" type="button" style="width: 10%; height: 6vh; margin-left: 1px; margin-top: 1.5rem;">Search</button>
       <div class="icon1">
-        <a class="fas fa-user" style="font-size: 30px; margin-right: 10px; margin-top: 1rem; padding-left: 15px; width: 3.5rem; height: 3.5rem; color: seashell;"></a>
-        <a class="fas fa-shopping-cart" style="font-size: 30px; margin-right: 10px; margin-top: 1rem; width: 3.5rem; height: 3.5rem; color: seashell;"><span class="position-absolute top-1 start-19 translate-middle badge rounded-pill bg-danger">1</span></span></a>
+        <a class="fas fa-user" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 30px;margin-top: 1rem; padding-left: 15px; width: 3.5rem; height: 3.5rem; color: seashell;"></a>
+          <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content text-center" id="content">
+                  <h2 style="margin: 20px;">Have an Account?</h2>
+                  <div class="input-group" id="pass" >
+                      <span class="input-group-text" style="background-color: white;"><i class="fas fa-user"></i></span>
+                      <input type="text" class="form-control" id="user" placeholder="Username">
+                  </div>
+                  <div class="input-group" id="pass">
+                      <span class="input-group-text" style="background-color: white;"><i class="fas fa-eye"></i></span>
+                      <input type="text" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="button" id="btn1" class="btn btn-primary">Sign In</button>
+                  <div class="form-check mb-3" style="display: flex; margin-left: 12rem; margin-top: 10px;">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                      <h6 style="padding-left: 9rem; margin-top: 1px;">Forgot Password?</h6>
+                  </div>
+                  <h6>-Sign in with-</h6>
+                  <div class="container" style="display: flex; margin: 20px; ">
+                      <button type="button" id="btn2" class="btn btn-outline-success">Google</button>
+                      <button type="button" id="btn3" class="btn btn-outline-success">Facebook</button>
+                  </div>    
+              </div>
+          </div>
+          </div>
+        <a class="fas fa-shopping-cart" style="font-size: 30px;margin-top: 1rem; width: 3.5rem; height: 3.5rem; color: seashell;"><span class="position-absolute top-1 start-19 translate-middle badge rounded-pill bg-danger">1</span></span></a>
         <a class="fa fa-heart" style="font-size: 35px; padding-top: 10px; margin-top: 1rem; width: 3.5rem; height: 3.5rem; color: seashell;"></a>
       </div>
     </form>
   </div>
-  <nav class="navbar bg-light justify-content-lg-center">
+  <nav class="navbar justify-content-lg-center">
     <ul class="nav justify-content-center">
       <li class="nav-item">
         <a class="nav-link" href="front.html">Home</a>
@@ -122,6 +76,16 @@
       </li>
     </ul>
   </nav>
+  <div class="dropdown" style="margin-left: 80rem; margin-top: 20px;">
+    <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Sort by Products
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Price (Low to High)</a></li>
+      <li><a class="dropdown-item" href="#">Price (High to Low)</a></li>
+    </ul>
+  </div>
+  <h2 style="text-align: center; margin-right: 35rem;">Vegetables</h2>
   <div class="body" style="display: flex;">
       <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20%; margin: 20px;">
         <div class="accordion" id="accordionExample">
