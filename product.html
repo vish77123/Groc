@@ -5,232 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/product.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <title>Product</title>
 </head>
 <body>
-  <div class="container-fluid" style="display: flex; background: rgba(0,0,0,0.8);">
-    <a class="navbar-brand" href="#">
-      <img src="photos/logo.jpg" alt="Logo" style="width: 120px;" class="rounded-pill">
-    </a>
-    <form class="search-bar" style="display: flex;"> 
-      <input class="form-control me-2" type="text" placeholder="Search" style="width: 700px; height: 6vh; margin-top: 1.5rem; margin-left: 70px;">
-      <button class="btn btn-success" type="button" style="width: 10%; height: 6vh; margin-left: 1px; margin-top: 1.5rem;">Search</button>
-      <div class="icon1">
-        <a class="fas fa-user" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 30px;margin-top: 1rem; padding-left: 15px; width: 3.5rem; height: 3.5rem; color: seashell;"></a>
-          <div class="modal fade" id="myModal">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content text-center" id="content">
-                  <h2 style="margin: 20px;">Have an Account?</h2>
-                  <div class="input-group" id="pass" >
-                      <span class="input-group-text" style="background-color: white;"><i class="fas fa-user"></i></span>
-                      <input type="text" class="form-control" id="user" placeholder="Username">
-                  </div>
-                  <div class="input-group" id="pass">
-                      <span class="input-group-text" style="background-color: white;"><i class="fas fa-eye"></i></span>
-                      <input type="text" class="form-control" placeholder="Password">
-                  </div>
-                  <button type="button" id="btn1" class="btn btn-primary">Sign In</button>
-                  <div class="form-check mb-3" style="display: flex; margin-left: 12rem; margin-top: 10px;">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                      </label>
-                      <h6 style="padding-left: 9rem; margin-top: 1px;">Forgot Password?</h6>
-                  </div>
-                  <h6>-Sign in with-</h6>
-                  <div class="container" style="display: flex; margin: 20px; ">
-                      <button type="button" id="btn2" class="btn btn-outline-success">Google</button>
-                      <button type="button" id="btn3" class="btn btn-outline-success">Facebook</button>
-                  </div>    
-              </div>
-          </div>
-          </div>
-        <a class="fas fa-shopping-cart" style="font-size: 30px;margin-top: 1rem; width: 3.5rem; height: 3.5rem; color: seashell;"><span class="position-absolute top-1 start-19 translate-middle badge rounded-pill bg-danger">1</span></span></a>
-        <a class="fa fa-heart" style="font-size: 35px; padding-top: 10px; margin-top: 1rem; width: 3.5rem; height: 3.5rem; color: seashell;"></a>
-      </div>
-    </form>
-  </div>
-  <nav class="navbar justify-content-lg-center">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="front.html">Home</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shop</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Vegetables</a></li>
-          <li><a class="dropdown-item" href="#">Fruits</a></li>
-          <li><a class="dropdown-item" href="#">Body Care</a></li>
-        </ul>
-      </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">About Us</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="dropdown" style="margin-left: 80rem; margin-top: 20px;">
-    <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      Sort by Products
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Price (Low to High)</a></li>
-      <li><a class="dropdown-item" href="#">Price (High to Low)</a></li>
-    </ul>
-  </div>
-  <h2 style="text-align: center; margin-right: 35rem;">Vegetables</h2>
-  <div class="body" style="display: flex;">
-      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20%; margin: 20px;">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="front.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Shop
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Vegetables</a>
+            <a class="dropdown-item" href="#">Fruits</a>
+            <a class="dropdown-item" href="#">Body Care</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <i class="fas fa-user-circle" id="user" data-toggle="modal" data-target="#staticBackdrop"></i>
+          <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                 <h5 class="text-uppercase text-center" id="staticBackdropLabel">Create An Account</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <form>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form3Example1cg" placeholder="Enter Name" class="form-control" style="width: 100%;" />
+                  </div> 
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form3Example1cg" placeholder="Enter Email" class="form-control" style="width: 100%;" />
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form3Example1cg" placeholder="Enter Password" class="form-control" style="width: 100%;" />
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form3Example1cg" placeholder="Confirm Password" class="form-control" style="width: 100%;" />
+                  </div>
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      value=""
+                      id="form2Example3cg"
+                    />
+                    <label class="form-check-label" for="form2Example3g">
+                      I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                    </label>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  </div>
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" class="fw-bold text-body"><u>Login here</u></a></p>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-shopping-cart" id="shoppingcart"></i>
+        <i class="fas fa-location-pin" id="location"></i>
+      </form>
+    </div>
+  </nav>
+  <div class="body" style="display: flex; margin: 1rem;">
+    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 30%; margin: 10px; margin-left: 20px;">
+      <div class="accordion" id="accordionExample">
+        <div class="card" style="width: 100%;">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Category
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Plant Vegetables
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Climbers & Creepers Vegetables
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Leafy Vegetables
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Root Vegetables
-                  </label>
-                </div>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                   Leafy Vegetables
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Plant Vegetables
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Root Vegetables
+                </label>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        </div>
+        <div class="card" style="width: 100%;">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Discount
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    50% or more
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    40% or more
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    30% or more
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    20% or more
-                  </label>
-                </div>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  50% off
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  25% off
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                  10% off
+                </label>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Customer Rating
+        </div>
+        <div class="card" style="width: 100%;">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Rating
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    5 star
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    4 star
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    3 star
-                  </label>
-                </div>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%;">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Sort by Product
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                   Price : High to Low
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Price : Low to High
+                </label>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <section class="card shadow p-3 mb-5 bg-body rounded" style="width: 70%; margin-top: 20px; margin-left: 60px;">
+      </div>    
+    </div>
+    <section class="card shadow p-3 mb-5 bg-body rounded" style="width: 59%;margin-top: 10px; margin-left: 40px;">
       <div class="row">
         <div class="col-lg-4">
-        <div class="card text-center" style="width: 20rem;">
-          <div class="card-text" style="border: 1px solid black; width: 70px; height: 3.5vh; margin: 10px; background-color: rgba(94, 243, 101, 0.7) ;"> 
-            <p style="padding-left: 3px;">40% off</p>
-          </div>
-          <div class="icon">
-            <a href="#" class="fas fa-heart" style="font-size: 1.5rem; height: 2.5rem; width: 2.5rem; line-height: 1.7rem;"></a>
-            <a href="#" class="fas fa-share" style="font-size: 1.5rem; height: 2.5rem; width: 2.5rem; line-height: 1.7rem;"></a>
-          </div>
-          <img src="photos/onion.png" class="card-img" alt="offer1" style="width: 15rem; margin-top: 33px; margin-left: 2rem;">
-          <div class="card-body justify-content-center">   
-            <h5 class="card-title">Onion</h5>
-            <div class="star-icon">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>    
-            <h5>Rs.72 per kg</h5>
-            <h6 style="text-decoration: line-through;">Rs 120/kg</h6>
-            <div class="dropdown" style="display: flex;">
-              <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Quantity
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">250 gm</a></li>
-                <li><a class="dropdown-item" href="#">500 gm</a></li>
-                <li><a class="dropdown-item" href="#">1 kg</a></li>
-              </ul>
-              <button type="button" class="btn btn-outline-success" style="margin-left: 4rem;">Add to Cart</button>
+          <div class="card" style="width: 15rem;">
+            <div class="card shadow" style="height: 25px;">
+              <p style="margin-left: 8rem;">GET 20% off</p>
+            </div>
+            <img class="card-img-top" src="photos/onion.png" alt="Card image cap" style="width: 80%; margin: 10px; margin-left: 2rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title text-center">Onion</h5>
+              <p class="card-text text-center">MRP <span style="text-decoration: line-through;">Rs.100</span> Rs.80 </p>
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option value="1">5 kg</option>
+                  <option value="2">2 kg</option>
+                  <option value="3">1 kg</option>
+                </select>
+              </div>
+              <a href="#" class="btn btn-outline-success" id="btn1"> Add <i class="fas fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
-        </div>
-        
-      </div>  
+    </div>  
       </section>
   </div>
+
   
 
 
@@ -242,6 +232,8 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script> 
 </body>
 </html>
