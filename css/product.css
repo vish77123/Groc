@@ -1,65 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 *{
-    font-family: Nunito,sans-serif;
+    font-family: Nunito, sans-serif;
+    font-size: 1.1rem;
 }
 #user{
     color: antiquewhite; 
-    font-size: 2.5rem; 
-    margin-left: 4rem;
+    font-size: 2rem; 
+    margin-left: 1rem;
     cursor: pointer;
 }
 #shoppingcart{
     color: antiquewhite; 
-    font-size: 2.5rem; 
+    font-size: 2rem; 
     margin-left: 20px;
+    margin-right: 15px;
     cursor: pointer;
 }
-#location{
+/* #location{
     color: antiquewhite; 
-    font-size: 2.5rem; 
+    font-size: 2rem; 
     margin-left: 20px;
     cursor: pointer;
+} */
+#btn1{
+    height: 2.5rem;
+}
+#dropdown{
+    margin-right: 1rem;
+
 }
 .btn{
     text-decoration: none;
     color: black;
-    height: 5vh;
+    height: 6vh;
 }
-.header #heart{
-    float: right;
-    margin: 9px 9px;
-    font-size: 1.5rem;
-    -webkit-transition: 0.5s ease;  
-    transition: 0.5s ease; 
+#carouselExampleIndicators{
+    width: 90%; 
+    height: 20rem; 
+    margin: 1rem 4rem;
+}
+#prev-icon{
+    background-color: rgba(0, 0, 0, 0.2); 
+    margin-right: 9rem;
+}
+#next-icon{
+    background-color: rgba(0, 0, 0, 0.2); 
+    margin-left: 9rem;
+}
+.image{
+    width: 100%; 
+    height: 19.5rem;
+}
+#card1{
+    width: 20%; 
+    margin: 10px; 
+    margin-left: 50px;
+}
+#card2{
+    width: 95%; 
+    margin: 10px 20px;
+}
+.body{
+    display: flex; 
+    margin: 1rem;
+}
+#card3{
+    width: 69%;
+    height: 21rem;
+    margin-top: 10px; 
+    margin-left: 40px;
+}
+#card4{
+    width: 13rem; 
+    height: 19rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden;
 }
-.header #shopcart{
-    float: right;
-    margin: 9px 9px;
-    font-size: 1.5rem;
-    -webkit-transition: 0.5s ease;  
-    transition: 0.5s ease; 
-    cursor: pointer;
+#card4 .backgroundEffect{
+    bottom: 0;
+    height: 0px;
+    width: 100%;
 }
-#heart:hover{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    color: rgb(34, 189, 34);
+#card4:hover{
+    color: black;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
 }
-#shopcart:hover{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    color: rgb(34, 189, 34);
+#card4:hover .backgroundEffect{
+    bottom: 0;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: greenyellow;
+    animation: popBackground 0.4s ease-in;
 }
-.card-img-top{
-    -webkit-transition: 0.5s ease;  
-    transition: 0.5s ease;  
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
 }
-.card-img-top:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.card .card-img-top{
+    border: 1px solid black;
+    width: 70%;
+    margin: 1rem 2rem;   
 }
-#btn1{
+.input{
+    width: 70%; 
+    margin-left: 2rem;
+}
+#btn3{
+    position: absolute;
+    top: 16rem; left: 3rem;
     width: 50%;
 }
 
@@ -78,3 +153,46 @@
 
 
 
+@media (max-width:768px){
+    form{
+        display: flex;
+        width: 50%;
+    }
+    #btn1{
+        display: none;
+    }
+    #user{
+        margin-left: .2rem;
+        margin-top: 5.5rem;
+        position: absolute;
+        font-size: 2rem;
+    }
+    #shoppingcart{
+        margin-left: 3rem;
+        position: relative;
+        font-size: 2rem;
+    }
+    #location{
+        margin-left: 1rem;
+        position: relative;
+        font-size: 2rem;
+    }
+    #card1{
+        display: none;
+    }
+    #card2{
+        width: max-content;
+    }
+    #card3{
+        width: 100%;
+        margin: 0 3rem;
+    }
+    #card4{
+        margin: 0 .5rem;
+    }
+}
+@media (max-width:2560px) and (min-width:768px){
+    #card2{
+        display: none;
+    }
+}
