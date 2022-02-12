@@ -40,6 +40,14 @@
       <form class="form-inline my-2 my-xxl-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search.." aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" id="btn1" type="submit">Search</button>
+        <div class="dropdown show" id="dropdown">
+          <i class="fas fa-location dropdown-toggle" id="location" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
         <i class="fas fa-user-circle" id="user" data-toggle="modal" data-target="#staticBackdrop"></i>
           <!-- login page starts -->
           <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -87,17 +95,6 @@
         </div>
         <!-- login page ends -->
         <i class="fas fa-shopping-cart" id="shoppingcart"></i>
-        <div class="dropdown show" id="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Location
-          </a>
-        
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
       </form>
     </div>
   </nav>
