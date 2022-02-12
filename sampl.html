@@ -23,6 +23,9 @@
 </head>
 <body>
     <style>
+        #home{
+            margin-left: 16rem;
+        }
         #search{
             width: 50%;
             margin-left: 10rem;
@@ -37,12 +40,30 @@
         #user{
             font-size: 1.5rem;
             margin-top: 20px;
-            margin-left: 15px;
+            margin-left: 5rem;
         }
         #cart{
             font-size: 1.5rem;
             margin-top: 20px;
-            margin-left: 15px;
+            margin-left: 20px;
+        }
+        p{
+            margin-top: 13px;
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        #user1{
+            color: white;
+        }
+        #cart1{
+            color: white;
+        }
+        #p1{
+            color: white;
+            margin-right: 2rem;
+        }
+        #p2{
+            color: white;
         }
 
 
@@ -51,18 +72,41 @@
         @media (max-width:768px){
            #search{
                position: absolute;
-                margin-left: 8rem;
+                margin-left: 9rem;
+                width: 39%;
             }
             #btn1{
                 position: absolute;
-                margin-left: 22rem;
+                margin-left: 24rem;
                 width: 16%;
             }
-            #user, #cart{
-                /* margin-left: 15rem; */
-                display: none;
+            #user{
+                margin-left: auto;
+            }
+            #cart{
+                margin-right: 1rem;
+            }
+            p{
+                 display: none;
             } 
+            #link{
+                margin-left: 16rem;
+            }
+            #dropdown{
+                margin-left: 16rem;
+            }
         }
+        @media (max-width:2560px){
+            #user1, #cart1, #p1, #p2{
+                display: none;
+            }
+        }
+        @media (max-width:1024px){
+            #user1, #cart1, #p1, #p2{
+                display: none;
+            }
+        }
+       
     </style>    
 
 
@@ -72,16 +116,13 @@
         <img src="photos/logo.png" alt="logo" style="width: 7rem;">
         <input class="form-control" id="search" type="search" placeholder="Search.." aria-label="Search">
         <button class="btn btn-outline-success" id="btn1" type="submit">Search</button>
-         <i class="fas fa-user-circle" id="user"></i>   
-         <i class="fas fa-shopping-cart" id="cart"></i> 
+         <i class="fas fa-user-circle" id="user"></i><p>Login</p>   
+         <i class="fas fa-shopping-cart" id="cart"></i><p> My Cart</p> 
     </div>
     <!--  -->
     <nav class="navbar navbar-expand-lg 
                 navbar-dark bg-dark">
-  
-        <a class="navbar-brand" href="#">Navbar</a>
-  
-        <button class="navbar-toggler" type="button"
+    <button class="navbar-toggler" type="button"
             data-toggle="collapse" 
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" 
@@ -95,13 +136,13 @@
                 id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" id="home" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" id="link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" 
+                    <a class="nav-link dropdown-toggle" id="dropdown" 
                         href="#" id="navbarDropdown"
                         role="button"
                         data-toggle="dropdown" 
@@ -127,16 +168,9 @@
                     </div>
                 </li>
             </ul>
-  
-            <button class="btn btn-success my-2 
-                my-sm-0 mx-2" type="submit">
-                Register
-            </button>
-              
-            <button class="btn btn-danger my-2 
-                my-sm-0" type="submit">
-                Logout
-            </button>
+            <i class="fas fa-user-circle" id="user1"></i><p id="p1">Login</p>   
+         <i class="fas fa-shopping-cart" id="cart1"></i><p id="p2"> My Cart</p> 
+
         </div>
     </nav>
 </body>
