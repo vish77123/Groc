@@ -1,54 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 *{
-    font-family: Nunito, sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
 }
-#user{
-    color: antiquewhite; 
-    font-size: 1.5rem;
-    cursor: pointer;
+.custom-toggler .navbar-toggler{
+    border-color: black;
 }
-#shoppingcart{
-    color: antiquewhite; 
-    font-size: 1.5rem; 
-    margin-left: 15px;
-    margin-right: 15px;
-    cursor: pointer;
-} 
-#location{
-    color: antiquewhite; 
-    font-size: 1.5rem; 
-    margin-left: 10px;
-    cursor: pointer;
+#home{
+    margin-left: 16rem;
+}
+#search{
+    width: 50%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+#search1{
+    width: 90%;
+    margin-left: 9px;
 }
 #btn1{
-    height: 2.5rem;
+    width: 10%;
+    height: 2.3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
-#dropdown{
-    margin-right: 1rem;
-
+#location{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 2rem;
+    cursor: pointer;
 }
-.btn{
-    text-decoration: none;
-    color: black;
-    height: 6vh;
+#user{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+#cart{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#login{
+    margin-top: 13px;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+#cartheading{
+    margin-top: 13px;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+#p1{
+    color: white;
+    margin-right: 2rem;
+}
+#p2{
+    color: white;
 }
 #carouselExampleIndicators{
-    width: 90%; 
-    height: 20rem; 
-    margin: 1rem 4rem;
+ width: 90%; 
+height: 20rem; 
+margin: 1rem 4rem;
 }
 #prev-icon{
-    background-color: rgba(0, 0, 0, 0.2); 
-    margin-right: 9rem;
+background-color: rgba(0, 0, 0, 0.2); 
+margin-right: 9rem;
 }
 #next-icon{
-    background-color: rgba(0, 0, 0, 0.2); 
-    margin-left: 9rem;
+background-color: rgba(0, 0, 0, 0.2); 
+margin-left: 9rem;
 }
 .image{
-    width: 100%; 
-    height: 19.5rem;
+width: 100%; 
+height: 19.5rem;
+}
+.body{
+    display: flex; 
+    margin: 1rem;
 }
 #card1{
     width: 20%; 
@@ -56,18 +86,14 @@
     margin-left: 50px;
 }
 #card2{
-    width: 95%; 
-    margin-left: 4rem;
-}
-.body{
-    display: flex; 
-    margin: 1rem;
+width: 95%; 
+margin-left: 4rem;
 }
 #card3{
-    width: 69%;
-    height: 21rem;
-    margin-top: 10px; 
-    margin-left: 40px;
+width: 69%;
+height: 21rem;
+margin-top: 10px; 
+margin-left: 40px;
 }
 #card4{
     width: 13rem; 
@@ -97,101 +123,103 @@
     background: greenyellow;
     animation: popBackground 0.4s ease-in;
 }
-@keyframes popBackground {
+    @keyframes popBackground {
     0% {
-        height: 20px;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%
+    height: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%
     }
 
     50% {
-        height: 80px;
-        border-top-left-radius: 75%;
-        border-top-right-radius: 75%
+    height: 80px;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%
     }
 
     75% {
-        height: 160px;
-        border-top-left-radius: 85%;
-        border-top-right-radius: 85%
+    height: 160px;
+    border-top-left-radius: 85%;
+    border-top-right-radius: 85%
     }
 
     100% {
-        height: 320px;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 100%
+    height: 320px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%
     }
-}
-.card .card-img-top{
-    border: 1px solid black;
+    }
+    .card .card-img-top{
     width: 70%;
     margin: 1rem 2rem;   
-}
-.input{
+    }
+    .input{
     width: 70%; 
     margin-left: 2rem;
-}
-#btn3{
+    }
+    #btn3{
     position: absolute;
     top: 16rem; left: 3rem;
     width: 50%;
-}
+    }
+    #form2Example3cg{
+        margin-right: 20rem;
+    }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px){
-    form{
-        display: flex;
-        width: 50%;
+    @media (max-width:768px){
+   #search{
+       position: absolute;
+        margin-left: 9rem;
+        width: 30%;
     }
     #btn1{
-        display: none;
-    }
-    #user{
-        margin-left: .2rem;
-        margin-top: 5.5rem;
         position: absolute;
-        font-size: 2rem;
-    }
-    #shoppingcart{
-        margin-left: 3rem;
-        position: relative;
-        font-size: 2rem;
+        margin-left: 20.5rem;
+        width: 16%;
     }
     #location{
-        margin-left: 1rem;
-        position: relative;
-        font-size: 2rem;
+        margin-left: 21rem;
+    }
+    #user{
+        margin-left: 1.5rem;
+    }
+    #cartheading, #login{
+         display: none;
+    } 
+    #navbarDropdown{
+        margin-left: 16rem;
+    }
+    #about{
+        margin-left: 16rem;
+    }
+    #contact{
+        margin-left: 16rem;
+    }
+    #card2{
+    width: 85%;
     }
     #card1{
         display: none;
     }
-    #card2{
-        width: max-content;
-    }
     #card3{
-        width: 100%;
-        margin: 0 2.5rem;
+    width: 100%;
+    margin: 0 2.5rem;
     }
-    #card4{
-        margin-right: .5rem;
     }
-}
-@media (max-width:2560px) and (min-width:768px){
+    @media (max-width:2560px){
+        #user1, #cart1, #p1, #p2{
+            display: none;
+        }
+    }
+    @media (max-width:1024px){
+    #user1, #cart1, #p1, #p2{
+        display: none;
+    }
+    }
+    @media (max-width:2560px) and (min-width:768px){
     #card2{
         display: none;
     }
-}
+    }
