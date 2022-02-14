@@ -65,7 +65,41 @@
                    <div class="d-flex justify-content-center">
                      <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
                    </div>
-                   <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" class="fw-bold text-body"><u>Login here</u></a></p>
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#" class="fw-bold text-body" data-toggle="modal" data-target="#myModal1"><u>Login here</u></a>
+                    <!-- Login page Modal starts-->
+                    <div class="modal fade" id="myModal1">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                  <div class="img" style="display: flex;">
+                                      <img src="photos/loginimg.png" alt="login" class="login-img" style="width: 40%;">
+                                          <div class="card" id="login-card">
+                                              <div class="card-body">
+                                                  <p class="text-center">Sign In</p>
+                                                  <form>
+                                                      <div class="form-outline mb-4">
+                                                          <input type="email" id="form3Example1cg" placeholder="Email" class="form-control" style="width: 100%;" />
+                                                      </div> 
+                                                      <div class="form-outline mb-4">
+                                                          <input type="password" id="form3Example1cg" placeholder="Password" class="form-control" style="width: 100%;" />
+                                                      </div> 
+                                                      <div class="d-flex justify-content-center">
+                                                          <button type="button" class="btn btn-outline-success text-body" id="btn"><span>Login</span></button>
+                                                      </div>
+                                                  </form>
+                                                  <p class="text-center text-muted mt-3 mb-0">-or sign in with-</p>
+                                                  <button href="#" class="btn btn-outline-success" id="btn4"><i class="fa-brands fa-google"></i>Google</button>
+                                                  <button href="#" class="btn btn-outline-success" id="btn4"><i class="fa-brands fa-facebook"></i>Facebook</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Login Page Modal ends -->
+                  </p>
                  </form>
                  </div>
              </div>
@@ -281,7 +315,7 @@
       </div>
       <!-- accordion for smaller devices ends -->
       <!-- accordion for larger devices starts -->
-      <div class="body">
+      <div class="body" id="main-body">
         <div class="card shadow p-3 mb-5 bg-body rounded" id="card1">
           <div class="accordion" id="accordionExample">
             <div class="card" style="width: 100%;">
@@ -427,6 +461,24 @@
               </div>
             </div>  
         </section>
+      </div>
+      <nav aria-label="Page navigation example" id="page-nav">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     <!-- products section ends -->
 </body>
 </html>
