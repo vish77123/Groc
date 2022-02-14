@@ -5,97 +5,139 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="css/new.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/new.css">
   <title>MyGroc</title>
 </head>
 
 <body>
-  <div class="container-fluid" style="display: flex; background: rgba(0,0,0,0.8);">
-    <a class="navbar-brand" href="#">
-      <img src="photos/logo.jpg" alt="Logo" style="width: 120px;" class="rounded-pill">
-    </a>
-    <form class="search-bar" style="display: flex;"> 
-      <input class="form-control me-2" type="text" placeholder="Search" style="width: 700px; height: 6vh; margin-top: 1.5rem; margin-left: 50px;">
-      <button class="btn btn-success" type="button" style="width: 10%; height: 6vh; margin-left: 1px; margin-top: 1.5rem;">Search</button>
-      <div class="icon1">
-        <a class="fas fa-user" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 30px;  margin-right: 10px; margin-top: 1rem; padding-left: 15px; width: 3.5rem; height: 3.5rem; color: seashell;"></a>
-        <div class="modal fade" id="myModal">
-          <div class="modal-dialog modal-lg">
-              <div class="modal-content text-center" id="content">
-                  <h2 style="margin: 20px;">Have an Account?</h2>
-                  <div class="input-group" id="pass" >
-                      <span class="input-group-text" style="background-color: white;"><i class="fas fa-user"></i></span>
-                      <input type="text" class="form-control" id="user" placeholder="Username">
-                  </div>
-                  <div class="input-group" id="pass">
-                      <span class="input-group-text" style="background-color: white;"><i class="fas fa-eye"></i></span>
-                      <input type="text" class="form-control" placeholder="Password">
-                  </div>
-                  <button type="button" id="btn1" class="btn btn-primary">Sign In</button>
-                  <div class="form-check mb-3" style="display: flex; margin-left: 12rem; margin-top: 10px;">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                      </label>
-                      <h6 style="padding-left: 12rem; margin-top: 1px;">Forgot Password?</h6>
-                  </div>
-                  <h6>-Sign in with-</h6>
-                  <div class="container" style="display: flex; margin: 20px; ">
-                      <button type="button" id="btn2" class="btn btn-outline-success">Google</button>
-                      <button type="button" id="btn3" class="btn btn-outline-success">Facebook</button>
-                  </div>    
-              </div>
+  <!-- heading1 starts -->
+  <div class="header" style="display: flex;">
+    <img src="photos/logo.png" alt="logo" style="width: 7rem;">
+    <input class="form-control" id="search" type="search" placeholder="Search.." aria-label="Search">
+    <button class="btn btn-outline-success" id="btn1" type="submit">Search</button>
+    <div class="dropdown">
+        <i class="fas fa-location-pin dropdown-toggle" id="location" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+        <div class="dropdown-menu" aria-labelledby="location">
+            <input class="form-control" id="search1" type="search" placeholder="Search.." aria-label="Search">
+            <a class="dropdown-item" href="#">Pune</a>
+            <a class="dropdown-item" href="#">Mumbai</a>
+            <a class="dropdown-item" href="#">Bangalore</a>
           </div>
-          </div>
-        <a class="fas fa-shopping-cart" style="font-size: 30px; margin-right: 10px; margin-top: 1rem; width: 3.5rem; height: 3.5rem; color: seashell;"><span class="position-absolute top-1 start-19 translate-middle badge rounded-pill bg-success">1</span></a>
-        <a class="fa fa-heart" style="font-size: 35px; padding-top: 10px; margin-top: 1rem; width: 3.5rem; height: 3.5rem; color: seashell;"></a>
-      </div>
-    </form>
-  </div>
-  <section id='home'>
-    <div class="header">
-      <div class="container">
-        <nav class="navbar justify-content-lg-center">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shop</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="product.html">Vegetables</a></li>
-              <li><a class="dropdown-item" href="#">Fruits</a></li>
-              <li><a class="dropdown-item" href="#">Body Care</a></li>
-            </ul>
-            </li>  
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">About Us</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="row">
-          <div class="col-lg-8 col-md-8 col-sm-6">
-            <div class="hometext">
-              <h2> Your Daily Need Products</h2>
-              <p>
-                <b class="subtext">Shop More, Save More.</b>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+    <i class="fas fa-user-circle" id="user" data-toggle="modal" data-target="#staticBackdrop"></i><p id="login">Login</p>
+    <!-- register page starts -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+              <h5 class="text-uppercase text-center" id="staticBackdropLabel">Create An Account</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+             <form>
+               <div class="form-outline mb-4">
+                 <input type="text" id="form3Example1cg" placeholder="Enter Name" class="form-control" style="width: 100%;" />
+               </div> 
+               <div class="form-outline mb-4">
+                 <input type="email" id="form3Example1cg" placeholder="Enter Email" class="form-control" style="width: 100%;" />
+               </div>
+               <div class="form-outline mb-4">
+                 <input type="password" id="form3Example1cg" placeholder="Enter Password" class="form-control" style="width: 100%;" />
+               </div>
+               <div class="form-outline mb-4">
+                 <input type="password" id="form3Example1cg" placeholder="Confirm Password" class="form-control" style="width: 100%;" />
+               </div>
+               <div class="form-check d-flex justify-content-center mb-5">
+                 <input
+                   class="form-check-input me-2"
+                   type="checkbox"
+                   value=""
+                   id="form2Example3cg"
+                 />
+                 <label class="form-check-label" for="form2Example3g">
+                   I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                 </label>
+               </div>
+               <div class="d-flex justify-content-center">
+                 <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+               </div>
+               <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" class="fw-bold text-body"><u>Login here</u></a></p>
+             </form>
+             </div>
+         </div>
+       </div>
+     </div>   
+     <!-- register page ends -->
+    <i class="fas fa-shopping-cart" id="cart"></i><p id="cartheading"> My Cart</p> 
+</div>
+ <!-- navbar starts -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" id="navbtn"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" 
+              id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" id="home" href="#" style="font-size: 1.5rem;">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" 
+                      href="#" id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown" 
+                      aria-haspopup="true" 
+                      aria-expanded="false"  style="font-size: 1.5rem;">
+                      Shop
+                  </a>
+
+                  <div class="dropdown-menu" 
+                      aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="product.html">
+                          Vegetables
+                      </a>
+                        
+                      <a class="dropdown-item" href="#">
+                          Fruits
+                      </a>
+                      <a class="dropdown-item" href="#">
+                          Body Care
+                      </a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="about" href="#"  style="font-size: 1.5rem;">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="contact" href="#"  style="font-size: 1.5rem;">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <!-- navbar ends -->
+  <div class="home">
+    <img src="photos/slider1.jpg" class="bg-img" alt="bg-img">
+      <div class="text">
+        <h1>Shop Now, Save More</h1>
+        <button type="button" class="btn btn-outline-success" id="btn">Shop Now</button>
+      </div>
+  </div>
 
   <section class="deal" id="deal">
     <div class="carouselEg owl-carousel">
@@ -161,7 +203,7 @@
   <section id="features">
     <div class="feature">
       <div class="feature-heading">
-        <h2><span>Features</span></h2>
+        <h1>Features</h1>
       </div>
       <div class="row featureCards gy-4">
         <div class="col-lg-4 col-md-4 carddiv">
