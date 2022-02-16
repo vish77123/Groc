@@ -17,120 +17,133 @@
 </head>
 
 <body>
-  <!-- heading1 starts -->
-  <div class="header" style="display: flex;">
+   <!-- heading1 starts -->
+   <div class="header" style="display: flex;">
     <img src="photos/logo.png" alt="logo" style="width: 7rem;">
     <input class="form-control" id="search" type="search" placeholder="Search.." aria-label="Search">
     <button class="btn btn-outline-success" id="btn1" type="submit">Search</button>
     <div class="dropdown">
         <i class="fas fa-location-pin dropdown-toggle" id="location" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
         <div class="dropdown-menu" aria-labelledby="location">
-            <input class="form-control" id="search1" type="search" placeholder="Search.." aria-label="Search">
+            <input class="form-control" id="searchlocation" type="search" placeholder="Search.." aria-label="Search">
             <a class="dropdown-item" href="#">Pune</a>
             <a class="dropdown-item" href="#">Mumbai</a>
             <a class="dropdown-item" href="#">Bangalore</a>
           </div>
     </div>
-    <i class="fas fa-user-circle" id="user" data-toggle="modal" data-target="#staticBackdrop"></i><p id="login">Login</p>
+    <i class="fas fa-user-circle" id="user" data-toggle="modal" data-target="#exampleModal"></i>
     <!-- register page starts -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
            <div class="modal-content">
-             <div class="modal-header">
-              <h5 class="text-uppercase text-center" id="staticBackdropLabel">Create An Account</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-               </button>
-             </div>
-             <div class="modal-body">
-             <form>
-               <div class="form-outline mb-4">
-                 <input type="text" id="form3Example1cg" placeholder="Enter Name" class="form-control" style="width: 100%;" />
-               </div> 
-               <div class="form-outline mb-4">
-                 <input type="email" id="form3Example1cg" placeholder="Enter Email" class="form-control" style="width: 100%;" />
-               </div>
-               <div class="form-outline mb-4">
-                 <input type="password" id="form3Example1cg" placeholder="Enter Password" class="form-control" style="width: 100%;" />
-               </div>
-               <div class="form-outline mb-4">
-                 <input type="password" id="form3Example1cg" placeholder="Confirm Password" class="form-control" style="width: 100%;" />
-               </div>
-               <div class="form-check d-flex justify-content-center mb-5">
-                 <input
-                   class="form-check-input me-2"
-                   type="checkbox"
-                   value=""
-                   id="form2Example3cg"
-                 />
-                 <label class="form-check-label" for="form2Example3g">
-                   I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
-                 </label>
-               </div>
-               <div class="d-flex justify-content-center">
-                 <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
-               </div>
-               <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" class="fw-bold text-body"><u>Login here</u></a></p>
-             </form>
-             </div>
-         </div>
+            <div class="container" id="container">
+              <div class="form-container sign-up-container">
+                  <form action="#">
+                      <h1 id="heading1">Create Account</h1>
+                      <div class="social-container">
+                          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                      <span>or use your email for registration</span>
+                      <input class="signUp-name" type="text" placeholder="Name" />
+                      <input class="signUp-email" type="email" name="email" placeholder="Email" />
+                      <input class="signUp-password" type="password" name="password" placeholder="Password" />
+                      <button class="signUp-btn">Sign Up</button>
+                  </form>
+              </div>
+              <div class="form-container sign-in-container">
+                  <form action="#">
+                      <h1 id="heading1">Sign in</h1>
+                      <div class="social-container">
+                          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                      <span>or use your account</span>
+                      <input class="signIn-email" type="email" placeholder="Email" />
+                      <input class="signIn-password" type="password" name="password" placeholder="Password" />
+                      <a href="#">Forgot your password?</a>
+                      <button class="signIn-btn">Sign In</button>
+                  </form>
+              </div>
+              <div class="overlay-container">
+                  <div class="overlay">
+                      <div class="overlay-panel overlay-left">
+                          <h1 id="heading1">Welcome Back!</h1>
+                          <p>To keep connected with us please login with your personal info</p>
+                          <button class="ghost" id="signIn">Sign In</button>
+                      </div>
+                      <div class="overlay-panel overlay-right">
+                          <h1 id="headin1">Hello, Friend!</h1>
+                          <p>Enter your personal details and start journey with us</p>
+                          <button class="ghost" id="signUp">Sign Up</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
        </div>
      </div>   
      <!-- register page ends -->
-    <i class="fas fa-shopping-cart" id="cart"></i><p id="cartheading"> My Cart</p> 
+    <i class="fas fa-shopping-cart" id="cart"></i>
 </div>
- <!-- navbar starts -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-  <button class="navbar-toggler" type="button"
-          data-toggle="collapse" id="navbtn"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation">
-            
-          <span class="navbar-toggler-icon"></span>
-      </button>
+<!--heading1 ends  -->
+<!-- navbar starts -->
+<nav class="navbar navbar-expand-lg navbar-light">
+<button class="navbar-toggler" type="button"
+        data-toggle="collapse" id="navbtn"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+          
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" 
-              id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" id="home" href="#" style="font-size: 1.5rem;">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" 
-                      href="#" id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown" 
-                      aria-haspopup="true" 
-                      aria-expanded="false"  style="font-size: 1.5rem;">
-                      Shop
-                  </a>
+    <div class="collapse navbar-collapse" 
+            id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" id="home" href="front.html" style="font-size: 1.3rem;">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" 
+                    href="#" id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false"  style="font-size: 1.3rem;">
+                    Shop
+                </a>
 
-                  <div class="dropdown-menu" 
-                      aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="product.html">
-                          Vegetables
-                      </a>
-                        
-                      <a class="dropdown-item" href="#">
-                          Fruits
-                      </a>
-                      <a class="dropdown-item" href="#">
-                          Body Care
-                      </a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="about" href="#"  style="font-size: 1.5rem;">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="contact" href="#"  style="font-size: 1.5rem;">Contact</a>
-              </li>
-          </ul>
-      </div>
-  </nav>
-  <!-- navbar ends -->
+                <div class="dropdown-menu" 
+                    aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="product.html" style="font-size: 1.4rem;">
+                        Vegetables
+                    </a>
+                      
+                    <a class="dropdown-item" href="#" style="font-size: 1.4rem;">
+                        Fruits
+                    </a>
+                    <a class="dropdown-item" href="#" style="font-size: 1.4rem;">
+                        Body Care
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="about" href="#"  style="font-size: 1.3rem;">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact" href="#"  style="font-size: 1.3rem;">Contact</a>
+            </li>
+        </ul>
+        <i class="fas fa-location-pin" id="location1"></i>
+        <i class="fas fa-user-circle" id="user1"></i>
+        <i class="fas fa-shopping-cart" id="cart1"></i>
+    </div>
+</nav>
+<!-- navbar ends -->
   <div class="home">
     <img src="photos/slider1.jpg" class="bg-img" alt="bg-img">
       <div class="text">
@@ -241,6 +254,79 @@
     </div>
     </div>
   </section>
+  <hr>
+    <footer>
+      <div class="row">
+          <div class="col-lg-4">
+            <div class="feature-box">
+              <i class="fas fa-truck-fast"></i>
+              <h6>Same Day Delivery</h6>
+              <p>Fast and best service. Cash on Delivery. Top Deals on Daily Needs. Schedule to your ease.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-box">
+              <i class="fas fa-bag-shopping"></i>
+              <h6>Freshness & Quality Guranteed</h6>
+              <p>Shop from a wide range of grocery products only on Groc Store at very cheap price.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-box">
+              <i class="fas fa-tag"></i>
+              <h6>Same Day Delivery</h6>
+              <p>Grab Grocery Offers to get Cashback on food items, beverages, vegetables, fruits and more.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <hr>
+    <section class="footer" id="footer">
+      <div class="row">
+        <div class="col-lg-3" id="col-1">
+          <img src="photos/logo.png" alt="logo" class="footerlogo">
+          <h1> Online Grocery Store</h1>
+          <p>
+          <a href="#">
+            <i class="fas fa-phone"></i>
+            +91-1234567890
+          </a>
+          </p> 
+          <p>
+          <a href="#">
+            <i class="fas fa-message"></i>
+            grocstore@gmail.com
+          </a>
+          </p>
+          <p>
+            <a href="#">
+              <i class="fas fa-globe"></i>
+              www.grocstore.com
+            </a>
+          </p>
+        </div>
+        <div class="col-lg-3" id="col-2">
+          <h6 class="mb-4">We Deal in</h6>
+            <li>Fruits</li>
+            <li>Vegetables</li>
+            <li>Personal Care</li>
+        </div>
+        <div class="col-lg-3" id="col-3">
+          <h6 class="mb-4">Useful Links</h6>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </div>
+        <div class="col-lg-2" id="col-4">
+          <div class="footer-social">
+            <h6 class="mb-4" style="font-size: 20px;">Follow Us On</h6>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
