@@ -133,8 +133,62 @@
                     <a class="nav-link" id="contact" href="#"  style="font-size: 1.3rem;">Contact</a>
                 </li>
             </ul>
+            <!-- icons for smaller devices starts -->
             <i class="fas fa-location-pin" id="location1"></i>
-            <i class="fas fa-user-circle" id="user1"></i>
+            <i class="fas fa-user-circle" id="user1" data-toggle="modal" data-target="#exampleModal"></i>
+            <!-- login page for smaller devices -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                 <div class="modal-content">
+                  <div class="container" id="container">
+                    <div class="form-container sign-up-container">
+                        <form action="#">
+                            <h1 id="heading1">Create Account</h1>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span>or use your email for registration</span>
+                            <input class="signUp-name" type="text" placeholder="Name" />
+                            <input class="signUp-email" type="email" name="email" placeholder="Email" />
+                            <input class="signUp-password" type="password" name="password" placeholder="Password" />
+                            <button class="signUp-btn">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h1 id="heading1">Sign in</h1>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span>or use your account</span>
+                            <input class="signIn-email" type="email" placeholder="Email" />
+                            <input class="signIn-password" type="password" name="password" placeholder="Password" />
+                            <a href="#">Forgot your password?</a>
+                            <button class="signIn-btn">Sign In</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1 id="heading1">Welcome Back!</h1>
+                                <p>To keep connected with us please login with your personal info</p>
+                                <button class="ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1 id="headin1">Hello, Friend!</h1>
+                                <p>Enter your personal details and start journey with us</p>
+                                <button class="ghost" id="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+           </div>   
             <i class="fas fa-shopping-cart" id="cart1"></i>
         </div>
     </nav>
@@ -219,14 +273,14 @@
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
+                  <label class="form-check-label" for="exampleRadios1">
                     25% off
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3">
+                  <label class="form-check-label" for="exampleRadios1">
                     10% off
                   </label>
                 </div>
@@ -250,14 +304,14 @@
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
+                  <label class="form-check-label" for="exampleRadios1">
                     4 star
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3">
+                  <label class="form-check-label" for="exampleRadios1">
                     3 star
                   </label>
                 </div>
@@ -308,6 +362,7 @@
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                   <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
                       Leafy Vegetables
                     </label>
@@ -344,14 +399,14 @@
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
+                    <label class="form-check-label" for="exampleRadios1">
                       25% off
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3">
+                    <label class="form-check-label" for="exampleRadios1">
                       10% off
                     </label>
                   </div>
@@ -375,14 +430,14 @@
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
+                    <label class="form-check-label" for="exampleRadios1">
                       4 star
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3">
+                    <label class="form-check-label" for="exampleRadios1">
                       3 star
                     </label>
                   </div>

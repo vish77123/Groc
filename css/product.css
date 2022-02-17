@@ -78,6 +78,18 @@ height: 19.5rem;
     margin: 10px; 
     margin-left: 50px;
 }
+#defaultCheck1{
+    position: absolute;
+    margin-left: -8rem;
+}
+#defaultCheck2{
+    position: absolute;
+    margin-left: -8rem;
+}
+#exampleRadios1{
+    position: absolute;
+    margin-left: -8rem;
+}
 #card2{
 width: 95%; 
 margin-left: 4rem;
@@ -498,13 +510,37 @@ margin-left: 40px;
     #col-3, #col-4{
         margin-top: 10px;
     }
+    #exampleRadios1{
+        position: absolute;
+        margin-left: -10rem;
+    }
+    #defaultCheck1{
+        position: absolute;
+        margin-left: -10rem;
+    }
+    #defaultCheck2{
+        position: absolute;
+        margin-left: -10rem;
+    }
     }
     
-    @media (max-width:2560px) and (min-width:1024px){
+    @media (max-width:2560px)and (min-width:768px){
         #card2{
             display: none;
         }
         #location1, #user1, #cart1{
         display: none;
+        }
+        #exampleRadios1{
+            position: absolute;
+            margin-left: -8rem;
+        }
+        #defaultCheck1{
+            position: absolute;
+            margin-left: -8rem;
+        }
+        #defaultCheck2{
+            position: absolute;
+            margin-left: -8rem;
         }
     }
