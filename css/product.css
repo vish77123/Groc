@@ -32,24 +32,27 @@
     margin-top: 1rem;
 }
 #location{
-    font-size: 1.5rem;
     position: absolute;
+    font-size: 1.5rem;
+    padding-right: 20px;
     top: 20px;
-    margin-left: 12rem;
+    left: 12rem;
     cursor: pointer;
 }
+
 #user{
     font-size: 1.5rem;
     position: absolute;
     margin-top: 20px;
-    margin-left: 73%;
+    margin-left: 70.3%;
     cursor: pointer;
 }
 #cart{
     font-size: 1.5rem;
     position: absolute;
     margin-top: 20px;
-    left: 76%;
+    margin-left: -3%;
+    right: 100%;
     cursor: pointer;
 }
 #carouselExampleIndicators{
@@ -524,9 +527,15 @@ margin-left: 40px;
     }
     }
     
-    @media (max-width:2560px)and (min-width:768px){
+    @media (max-width:2560px) and (min-width:1024px){
         #card2{
             display: none;
+        }
+        #user{
+            left: 3%;
+        }
+        #cart{
+            left: 79%;
         }
         #location1, #user1, #cart1{
         display: none;
